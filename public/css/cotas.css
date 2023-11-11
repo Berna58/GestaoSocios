@@ -1,0 +1,28 @@
+.bg-green {
+    background-color: #00ff00; /* Cor verde */
+}
+
+.bg-red {
+    background-color: #ff0000; /* Cor vermelha */
+}
+
+.text-green {
+    color: #00ff00; /* Cor verde */
+}
+
+.text-red {
+    color: #ff0000; /* Cor vermelha */
+}
+
+.custom-pagination .page-link {
+    color: #000000; /* cor do texto */
+    background-color: #f0f0f0; /* cor de fundo */
+    /* outras propriedades de estilo */
+}
+
+.custom-pagination .page-item.active .page-link {
+    color: #ffffff; /* cor do texto ativo */
+    background-color: #000000; /* cor de fundo ativo */
+    /* outras propriedades de estilo */
+}
+

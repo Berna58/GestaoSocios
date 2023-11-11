@@ -1,0 +1,56 @@
+body {
+    margin: 0;
+    padding-bottom: 60px; /* altura do footer */
+    position: relative;
+    min-height: 100vh;
+}
+
+.footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(167, 167, 167, 0.44);
+    text-align: center;
+    padding: 20px;
+}
+
+.footer:before {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    height: 100%;
+}
+
+.footer .footer-icons {
+    margin-bottom: 10px;
+}
+
+.footer .footer-icon {
+    display: inline-block;
+    margin: 0 10px;
+    padding: 5px;
+    border: 1px solid black; /* Adiciona a borda preta */
+}
+
+.footer .footer-icon i {
+    color: black; /* Torna o ícone preto */
+}
+
+.footer .footer-title {
+    margin-top: 0;
+    padding-bottom: 10px; /* Adiciona espaço entre o título e a linha */
+}
+
+.footer .footer-title:after {
+    content: "";
+    display: block;
+    width: 50%; /* Define a largura da linha como 50% */
+    margin: 0 auto;
+    border-bottom: 2px solid black; /* Define a linha com 2px de espessura */
+    margin-top: 10px; /* Adiciona espaço entre a linha e os ícones */
+}
+
+.footer .footer-text {
+    margin-bottom: 0;
+}
