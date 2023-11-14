@@ -15,12 +15,17 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+
+//Root Routes----------------------------------------------------------------------------------------------
 Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
-Auth::routes();
 
+//Auth Routes-----------------------------------------------------------------------------------------------
+Auth::routes();
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-Route::get('/logout', '\App\Http\Controllers\Auth\LoginController@logout');
+Route::get('/logout', [App\Http\Controllers\Auth\LoginController::class, 'classlogout'])->name('logout');
+
+
 
 Route::get('/confirmation', [App\Http\Controllers\Auth\RegisterController::class, 'confirmation'])->name('confirmation');
 Route::get('/suspensao', [App\Http\Controllers\Auth\LoginController::class, 'suspension'])->name('suspension');
